@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name ="viewport" content="width=device-width, intial-scale=1">
+    <title>Main page</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        .header {
+          padding: 80px;
+          text-align: center;
+          background: #336699;
+          color: white;
+        }
+
+        .header h1 {
+            font-size: 40px;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: #1E1E1E;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+        }
+
+        .navbar a.right {
+            float: right;
+        }
+
+        .navbar a:hover {
+            background-color: #919191;
+            color: black;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .side {
+            flex: 30%;
+            background-color: #afafaf;
+            padding: 20px;
+        }
+        
+        .main {
+            flex: 70%;
+            background-color: #1E1E1E;
+            padding: 20px;
+        }
+
+        .main h2 {
+            font-family: Verdana;
+            color: white;
+        }
+
+        .main h5 {
+            font-family: Verdana;
+            color: white;
+        }
+
+        .main p {
+            font-family: sans-serif;
+            color: white;
+        }
+
+        .fakeimg {
+            background-color: red;
+            width: 100%;
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 700px) {
+            .row {   
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width:100%;
+            }
+        }
+
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+    </style>
+  </head>
+
+  <body style="background-color: black;">
+      <div class="header">
+          <h1>Mijn Introductie Site</h1>
+          <p>Een website gemaakt door Damian Jordan over mijn hobby: Warhammer 40.000, een sci-fi, miniatuur, tabletop wargame!</p>
+      </div>
+
+      <div class="navbar">
+          <a href="imperium.html">The Imperium of Man</a>
+      </div>
+
+      <div class="row">
+          <div class="side"> 
+              <h2>Over mij</h2>
+              <h5>Foto:</h5>
+              <img src="../Pics/Main Page Pics/Pic_of_me.jpg" alt="Pic of Me" width="200px" height="355.55px">
+              <p>Ik ben Damian Jordan, ik ben 22 jaar oud en ik hou van video games. Verder heb ik ook een interesse voor programmering en woon ik in Almere-Buiten.</p>
+              <h3>Mijn hobbies</h3>
+              <p>Mijn hobbies zijn video games, voornamelijk RPGs zoals Final Fantasy 14, en, waar ik het nog verder op deze site zal hebben, Warhammer 40.000.</p>
+          </div>
+          <div class="main"> 
+              <h2>WARHAMMER 40.000</h2>
+              <h5>Introduction</h5>
+              <img src="../Pics/Main Page Pics/Warhammer_40k_logo.png" alt="Warhammer 40K Logo" height="200px">
+              <p>It is the 41st millenium. Humanity is constantly on the brink of extinction due to various threats: the vile, daemonic powers of Chaos, the alien and strange forces of Xenos and humanity itself. For in the grim darkness of the far future, there is only war.</p>
+              <p>Welcome to Warhammer 40.000, also known as Warhammer 40K! This is a very vast and expansive universe that I and many other partake in. In Warhammer 40K, there is only death and destruction. Every faction, such as the Imperium of Man, the Aeldari, the Orks, the Necrons,
+                  the forces of Chaos, the Tyranids, is some flavor of evil. Something about them makes them evil. The Imperium of Man is a highly fanatical, xenophobic and extermely religious group of people that worship their god, the God-Emperor of Mankind. The Aeldari are
+                  essentially space elves, complete with magical powers. Chaos is the main "evil" and reside in the Warp, being certain aspects of people amplified to the max, such as Khorne being about honorable combat but also blood and murder. Orks, they just want a good old time fighting with people and
+                  are just as likely to kill each other as they are to kill a human or an Eldar (one of those space elves). Tyranids are giant bugs looking for their next meal. The T'au fight for the "greater good", while also essentially brainwashing whoever joins them. If any (or all!)
+                  of that sounds interesting, feel free to take a look around! If not, thank you for even reading this far!
+              </p>
+              <br>
+              <h2>THE BEGINNING</h2>
+              <h5>The actual start of Warhammer</h5>
+              <img src="../Pics/Main Page Pics/The_Warp.jpg" alt="Actually Hell" width=100% height="200px">
+              <p>If you made it this far, I assume you are somewhat interested. Good! Again, I welcome you! This will be explaining the actual start of all of Warhammer. For more detailed answer on certain things, such as but certainly not limited to: "Who is the God-Emperor of Mankind?", "Who 
+                  are the Aeldari?", "What are Orks and why do they love fighting so much?", "Why is Chaos 'evil'?", "What is the T'au's 'greater good'?" "Why is there magic in a sci-fi setting?", "What the heck is the Warp? The heck is a Khorne?" 
+                  And many, many more questions you are sure to have, there will be a navigation bar at the top linking to most of the 'super factions', those being the Imperium of Man for everything relating to the Imperium that is still loyal to the God-Emperor (including said God-Emperor), Chaos for
+                  everything surrounding Chaos and the 4 Chaos Gods and Xenos for all of the alien races of 40K including but not limited to: Eldar, Necrons and Orks. This will be a very intensive look at everything, so this site will not be entirely read immediately. But let's begin at the beginning shall we?
+              </p>
+          </div>
+      </div>
+
+      <div class="footer">
+        <h2>Hier staat iets wat heel interessant en belangrijk is!</h2>
+      </div> 
+  </body>
+</html>
