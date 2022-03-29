@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #336699;
+  color: white;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #1e1e1e;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #919191;
+  color: black;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  background-color: #afafaf;
+  padding: 20px;
+}
+
+.main {
+  flex: 70%;
+  background-color: #1e1e1e;
+  padding: 20px;
+}
+
+.main h2 {
+  font-family: Verdana;
+  color: white;
+}
+
+.main h5 {
+  font-family: Verdana;
+  color: white;
+}
+
+.main p {
+  font-family: sans-serif;
+  color: white;
+}
+
+.fakeimg {
+  background-color: red;
+  width: 100%;
+  padding: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+.imageMe,
+.imageLogo,
+.imageWarp {
+  width: 100%;
+  height: auto;
+}
+
+.imageMe {
+  max-height: 355.55px;
+  max-width: 200px;
+}
+
+.imageLogo,
+.imageWarp {
+  max-height: 200px;
+}
+
+.imageGodEmp {
+  width: auto;
+  max-height: 500px;
+}
+
+.imageImperium {
+  width: auto;
+  max-height: 400px;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 10vw);
+  background-color: #1e1e1e;
+}
+
+.galleryItem--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.galleryItem--2 {
+  grid-column-start: 3;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.galleryItem--3 {
+  grid-column-start: 3;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.galleryItem--4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+
+.galleryItem--5 {
+  grid-column-start: 4;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 9;
+}
+
+.imageMe1,
+.imageWarp1,
+.imageGodEmp1,
+.imageImperium1,
+.imageLogo1 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+
+.imageMe1:hover,
+.imageWarp1:hover,
+.imageGodEmp1:hover,
+.imageImperium1:hover,
+.imageLogo1:hover {
+  transform: scale(1.2);
+}
